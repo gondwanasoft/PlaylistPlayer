@@ -1,0 +1,12 @@
+#EXTM3U
+#EXTVLCOPT:fullscreen
+#EXTVLCOPT:rate="0.25"
+#EXTVLCOPT:start-time=348
+#EXTVLCOPT:stop-time=351
+a.flv
+#EXTVLCOPT:start-time=85
+#EXTVLCOPT:stop-time=89
+a.mov
+#EXTVLCOPT:start-time=79
+#EXTVLCOPT:stop-time=82
+a.wmv
