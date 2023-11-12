@@ -423,7 +423,7 @@ namespace LibVLCSharp.WPF.Sample
 
         //********************************************************************************** Playlist File Reading *****
 
-        private bool ReadPlaylist(string playlistFilename, bool silent=false) {
+        private bool ReadPlaylist(string playlistFilename, bool silent=false) { // TODO 1 check that .. in command line works okay; maybe check PlaylistMaker code
             Debug.WriteLine("ReadPlaylist(): {0}", playlistFilename);
             if (!File.Exists(playlistFilename)) {
                 if (!silent) System.Windows.MessageBox.Show("Unable to open \"" + playlistFilename + "\"", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -500,7 +500,7 @@ namespace LibVLCSharp.WPF.Sample
         }
     }
 }
-// DLL dependencies: LibVLCSharp.dll, LibVLCSharp.WPF.dll, libvlc/*
+// DLL dependencies: LibVLCSharp.dll, LibVLCSharp.WPF.dll, libvlc
 // TODO 1 JOSEPHINE: doesn't seek to start of first (and maybe other) segs if slow
 // TODO 5 mouse double-click to toggle full screen (hard coz VLC swallows mouse)
 // TODO 5 mouse single-click to toggle pause (or hide) (hard coz VLC swallows mouse)
